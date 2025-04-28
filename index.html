@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/barra.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calc">
+        <div class="top">
+          <img src="assets/images/barra.svg" alt="barra" />
+          <h1>Calculadora de IMC</h1>
+        </div>
+        <form id="form">
+          <label for="peso">Peso:</label>
+          <div class="inputs">
+            <input
+              type="number"
+              step="0.1"
+              name="peso"
+              id="peso"
+              placeholder="Seu peso em KG"
+              required
+            />
+            <i class="ph-fill ph-barbell"></i>
+          </div>
+          <label for="altura">Altura:</label>
+          <div class="inputs">
+            <input
+              type="number"
+              step="0.01"
+              name="altura"
+              id="altura"
+              placeholder="Sua altura em M"
+              required
+            />
+            <i class="ph-fill ph-ruler"></i>
+          </div>
+          <div class="button-area">
+            <button type="submit">Calcular</button>
+          </div>
+        </form>
+      </div>
+      <div id="infos"class="bottom hidden">
+        <div class="results">
+          <span id="result"></span>
+          <span>Seu IMC</span>
+        </div>
+        <div class="info">
+          <span>Classificação</span>
+          <span id="description"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>
