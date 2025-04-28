@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #030303;
+    color:#fff;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calc{
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3b3b3b;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    width: 100%;
+    gap: 10px;
+}
+
+.inputs input{
+    background-color: #3b3b3b;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    outline: none;
+}
+
+.inputs input::-webkit-outer-spin-button,
+.inputs input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+.inputs i{
+    color: #fff;
+    font-size: 20px;
+}
+
+.button-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-area button{
+    background-color:rgb(81, 255, 0);
+    color: #010101;
+    border: none;
+    margin: 5px 0;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-area button:hover{
+    background-color:rgb(70, 255, 70);
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 370px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.results span{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(81, 255, 0);
+}
+
+.results span:last-child{
+    font-size: 12px;
+    font-weight: 400;
+    color:rgb(138, 138, 138);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.info span{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(138, 138, 138);
+}
+
+.info span:last-child{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.hidden{
+    display: none;
+}
